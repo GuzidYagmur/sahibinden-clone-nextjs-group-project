@@ -1,3 +1,4 @@
+import FilterCard from "@/components/filters-card";
 import Header from "@/components/header";
 import LogoutBtn from "@/components/logout-btn";
 import { strapi } from "@/lib/strapi";
@@ -18,6 +19,7 @@ export default async function Home() {
   return (
     <div>
       <Header/>
+      <FilterCard/>
       <ul>
         {data.map((item) => (
           <li key={item.id}>

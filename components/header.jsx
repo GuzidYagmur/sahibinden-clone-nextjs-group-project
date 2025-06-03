@@ -12,13 +12,13 @@ export default function Header() {
       <nav className="flex space-x-4">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button  className="text-white border-white hover:bg-white/20">
+            <Button  className="text-white border-none bg-transparent hover:bg-white/20">
               Profil ▾
             </Button>
           </DropdownMenuTrigger>
-          <DropdownMenuContent className="w-40">
+          <DropdownMenuContent className=" bg-white text-gray-800 p-2">
             <DropdownMenuItem>
-              <a href="#profile" className="w-full block">Profili Düzenle</a>
+              <a href="#profile" className="w-full block ">Profili Düzenle</a>
             </DropdownMenuItem>
             <DropdownMenuItem>
               <a href="#settings" className="w-full block">Ayarlar</a>
@@ -28,13 +28,13 @@ export default function Header() {
 
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button className="text-white border-white hover:bg-white/20">
+            <Button className="text-white border-none bg-transparent hover:bg-white/20">
               Araç ▾
             </Button>
           </DropdownMenuTrigger>
-          <DropdownMenuContent className="w-40">
+          <DropdownMenuContent className=" bg-white text-gray-800 p-2">
             <DropdownMenuItem>
-              <a href="#araclar" className="w-full block">Araç Listesi</a>
+              <a href="#araclar" className="w-full block ">Araç Listesi</a>
             </DropdownMenuItem>
             <DropdownMenuItem>
               <a href="#arac-ekle" className="w-full block">Araç Ekle</a>
@@ -44,16 +44,16 @@ export default function Header() {
 
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button  className="text-white border-white hover:bg-white/20">
+            <Button  className="text-white border-none bg-transparent hover:bg-white/20">
               Emlak ▾
             </Button>
           </DropdownMenuTrigger>
-          <DropdownMenuContent className="w-40">
+          <DropdownMenuContent className=" bg-white text-gray-800 p-2 rounded-lg">
             <DropdownMenuItem>
-              <a href="#emlaklar" className="w-full block text-white">Emlak Listesi</a>
+              <a href="#emlaklar" className="w-full block">Emlak Listesi</a>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <a href="#emlak-ekle" className="w-full block text-white">Emlak Ekle</a>
+              <a href="#emlak-ekle" className="w-full block">Emlak Ekle</a>
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
