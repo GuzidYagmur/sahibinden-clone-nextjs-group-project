@@ -1,3 +1,7 @@
+
+import FilterCard from "@/components/filters-card";
+import Header from "@/components/header";
+=======
 import AdsCard from "@/components/ads-card";
 
 import LogoutBtn from "@/components/logout-btn";
@@ -9,12 +13,33 @@ export default async function Home() {
       category: {
         fields: ["name", "slug"],
       },
-      details: true,
+      detail: true,
     },
   });
   console.log(data);
-  console.log(data[0].details);
+  console.log(data[0].detail);
   const user = await strapi.fetchUser();
 
-  return <div></div>;
-}
+
+  return (
+    <div>
+      <Header/>
+      <FilterCard/>
+      <ul>
+        {data.map((item) => (
+          <li key={item.id}>
+            {item.title} -{" "}
+            {item.price.toLocaleString("tr-TR", {
+              style: "currency",
+              currency: "TRY",
+            })}
+            {item.detail.find(
+              (detail) =>
+                detail.__component.includes(item.category.slug).housingType
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+
