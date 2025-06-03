@@ -1,3 +1,5 @@
+import AdsCard from "@/components/ads-card";
+
 import LogoutBtn from "@/components/logout-btn";
 import { strapi } from "@/lib/strapi";
 
@@ -14,25 +16,5 @@ export default async function Home() {
   console.log(data[0].details);
   const user = await strapi.fetchUser();
 
-  return (
-    <div>
-      <h1>Sahibinden Clone</h1>
-      <LogoutBtn />
-      <ul>
-        {data.map((item) => (
-          <li key={item.id}>
-            {item.title} -{" "}
-            {item.price.toLocaleString("tr-TR", {
-              style: "currency",
-              currency: "TRY",
-            })}
-            {item.details.find(
-              (detail) =>
-                detail.__component.includes(item.category.slug).housingType
-            )}
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
+  return <div></div>;
 }
