@@ -1,3 +1,4 @@
+import Header from "@/components/header";
 import LogoutBtn from "@/components/logout-btn";
 import { strapi } from "@/lib/strapi";
 
@@ -7,17 +8,16 @@ export default async function Home() {
       category: {
         fields: ["name", "slug"],
       },
-      details: true,
+      detail: true,
     },
   });
   console.log(data);
-  console.log(data[0].details);
+  console.log(data[0].detail);
   const user = await strapi.fetchUser();
 
   return (
     <div>
-      <h1>Sahibinden Clone</h1>
-      <LogoutBtn />
+      <Header/>
       <ul>
         {data.map((item) => (
           <li key={item.id}>
@@ -26,7 +26,7 @@ export default async function Home() {
               style: "currency",
               currency: "TRY",
             })}
-            {item.details.find(
+            {item.detail.find(
               (detail) =>
                 detail.__component.includes(item.category.slug).housingType
             )}
