@@ -1,10 +1,7 @@
-
+import AdsCard from "@/components/ads-card";
+import CarCard from "@/components/car-card";
 import FilterCard from "@/components/filters-card";
 import Header from "@/components/header";
-=======
-import AdsCard from "@/components/ads-card";
-
-import LogoutBtn from "@/components/logout-btn";
 import { strapi } from "@/lib/strapi";
 
 export default async function Home() {
@@ -13,33 +10,21 @@ export default async function Home() {
       category: {
         fields: ["name", "slug"],
       },
-      detail: true,
+      details: true,
     },
   });
-  console.log(data);
-  console.log(data[0].detail);
-  const user = await strapi.fetchUser();
+  try {
+    console.log("Ad sayısı:", data.length);
+  } catch (e) {
+    console.error("Log hatası", e);
+  }
 
+  const user = await strapi.fetchUser();
 
   return (
     <div>
-      <Header/>
-      <FilterCard/>
-      <ul>
-        {data.map((item) => (
-          <li key={item.id}>
-            {item.title} -{" "}
-            {item.price.toLocaleString("tr-TR", {
-              style: "currency",
-              currency: "TRY",
-            })}
-            {item.detail.find(
-              (detail) =>
-                detail.__component.includes(item.category.slug).housingType
-            )}
-          </li>
-        ))}
-      </ul>
+      <Header />
+      <FilterCard />
     </div>
   );
-
+}

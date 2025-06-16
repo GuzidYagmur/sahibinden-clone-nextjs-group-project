@@ -1,0 +1,292 @@
+[
+  {
+    "marka": "Mercedes",
+    "model": [
+      {
+        "id": 1,
+        "ad": "Mercedes A200",
+        "fiyat": 1500000,
+        "sehir": "Antalya",
+        "kilometre": 40000,
+        "satici": "Galeriden",
+        "renk": "Beyaz",
+        "model_yili": 2021,
+        "yakit": "Benzin",
+        "resim": "/images/mercedes-a200.jpg"
+      },
+      {
+        "id": 2,
+        "ad": "Mercedes E350",
+        "fiyat": 4500000,
+        "sehir": "İstanbul",
+        "kilometre": 80000,
+        "satici": "Sahibinden",
+        "renk": "Siyah",
+        "model_yili": 2019,
+        "yakit": "Dizel",
+        "resim": "/images/mercedes-e350.jpg"
+      }
+    ]
+  },
+  {
+    "marka": "Volkswagen",
+    "model": [
+      {
+        "id": 3,
+        "ad": "Volkswagen Golf",
+        "fiyat": 1500000,
+        "sehir": "Bursa",
+        "kilometre": 30000,
+        "satici": "Galeriden",
+        "renk": "Kırmızı",
+        "model_yili": 2022,
+        "yakit": "Benzin",
+        "resim": "/images/volkswagen-golf.jpg"
+      },
+      {
+        "id": 4,
+        "ad": "Volkswagen Passat",
+        "fiyat": 2900000,
+        "sehir": "Ankara",
+        "kilometre": 60000,
+        "satici": "Sahibinden",
+        "renk": "Mavi",
+        "model_yili": 2020,
+        "yakit": "Dizel",
+        "resim": "/images/volkswagen-passat.jpg"
+      }
+    ]
+  },
+  {
+    "marka": "Toyota",
+    "model": [
+      {
+        "id": 5,
+        "ad": "Toyota Corolla",
+        "fiyat": 1200000,
+        "sehir": "İzmir",
+        "kilometre": 45000,
+        "satici": "Galeriden",
+        "renk": "Gümüş",
+        "model_yili": 2021,
+        "yakit": "Benzin",
+        "resim": "/images/toyota-corolla.jpg"
+      },
+      {
+        "id": 6,
+        "ad": "Toyota Yaris",
+        "fiyat": 900000,
+        "sehir": "Antalya",
+        "kilometre": 30000,
+        "satici": "Sahibinden",
+        "renk": "Siyah",
+        "model_yili": 2019,
+        "yakit": "Benzin",
+        "resim": "/images/toyota-yaris.jpg"
+      }
+    ]
+  },
+  {
+    "marka": "Honda",
+    "model": [
+      {
+        "id": 7,
+        "ad": "Honda Civic",
+        "fiyat": 1100000,
+        "sehir": "Ankara",
+        "kilometre": 50000,
+        "satici": "Galeriden",
+        "renk": "Beyaz",
+        "model_yili": 2020,
+        "yakit": "Benzin",
+        "resim": "/images/honda-civic.jpg"
+      },
+      {
+        "id": 8,
+        "ad": "Honda CR-V",
+        "fiyat": 1450000,
+        "sehir": "İzmir",
+        "kilometre": 85000,
+        "satici": "Sahibinden",
+        "renk": "Kahverengi",
+        "model_yili": 2018,
+        "yakit": "Dizel",
+        "resim": "/images/honda-crv.jpg"
+      }
+    ]
+  },
+  {
+    "marka": "Audi",
+    "model": [
+      {
+        "id": 9,
+        "ad": "Audi Q5",
+        "fiyat": 2000000,
+        "sehir": "Bursa",
+        "kilometre": 100000,
+        "satici": "Galeriden",
+        "renk": "Beyaz",
+        "model_yili": 2020,
+        "yakit": "Dizel",
+        "resim": "/images/audi-q5.jpg"
+      },
+      {
+        "id": 10,
+        "ad": "Audi A6",
+        "fiyat": 3500000,
+        "sehir": "İstanbul",
+        "kilometre": 70000,
+        "satici": "Sahibinden",
+        "renk": "Siyah",
+        "model_yili": 2019,
+        "yakit": "Benzin",
+        "resim": "/images/audi-a6.jpg"
+      }
+    ]
+  },
+  {
+    "marka": "BMW",
+    "model": [
+      {
+        "id": 11,
+        "ad": "BMW 520i",
+        "fiyat": 4500000,
+        "sehir": "Antalya",
+        "kilometre": 40000,
+        "satici": "Galeriden",
+        "renk": "Beyaz",
+        "model_yili": 2021,
+        "yakit": "Benzin",
+        "resim": "/images/bmw-520i.jpg"
+      },
+      {
+        "id": 12,
+        "ad": "BMW 330i",
+        "fiyat": 2750000,
+        "sehir": "İzmir",
+        "kilometre": 50000,
+        "satici": "Sahibinden",
+        "renk": "Mavi",
+        "model_yili": 2019,
+        "yakit": "Benzin",
+        "resim": "/images/bmw-330i.jpg"
+      }
+    ]
+  },
+  {
+    "marka": "Porsche",
+    "model": [
+      {
+        "id": 13,
+        "ad": "Porsche 911",
+        "fiyat": 12000000,
+        "sehir": "İstanbul",
+        "kilometre": 30000,
+        "satici": "Galeriden",
+        "renk": "Kırmızı",
+        "model_yili": 2022,
+        "yakit": "Benzin",
+        "resim": "/images/porsche-911.jpg"
+      },
+      {
+        "id": 14,
+        "ad": "Porsche Cayenne",
+        "fiyat": 7500000,
+        "sehir": "Bursa",
+        "kilometre": 60000,
+        "satici": "Sahibinden",
+        "renk": "Siyah",
+        "model_yili": 2020,
+        "yakit": "Dizel",
+        "resim": "/images/porsche-cayenne.jpg"
+      }
+    ]
+  },
+  {
+    "marka": "Jaguar",
+    "model": [
+      {
+        "id": 15,
+        "ad": "Jaguar F-Type",
+        "fiyat": 8500000,
+        "sehir": "İstanbul",
+        "kilometre": 25000,
+        "satici": "Galeriden",
+        "renk": "Mavi",
+        "model_yili": 2022,
+        "yakit": "Benzin",
+        "resim": "/images/jaguar-ftype.jpg"
+      },
+      {
+        "id": 16,
+        "ad": "Jaguar XE",
+        "fiyat": 6000000,
+        "sehir": "Ankara",
+        "kilometre": 45000,
+        "satici": "Sahibinden",
+        "renk": "Gri",
+        "model_yili": 2020,
+        "yakit": "Benzin",
+        "resim": "/images/jaguar-xe.jpg"
+      }
+    ]
+  },
+  {
+    "marka": "Ford",
+    "model": [
+      {
+        "id": 17,
+        "ad": "Ford Fiesta",
+        "fiyat": 850000,
+        "sehir": "Adana",
+        "kilometre": 40000,
+        "satici": "Galeriden",
+        "renk": "Sarı",
+        "model_yili": 2020,
+        "yakit": "Benzin",
+        "resim": "/images/ford-fiesta.jpg"
+      },
+      {
+        "id": 18,
+        "ad": "Ford Focus",
+        "fiyat": 1150000,
+        "sehir": "İzmir",
+        "kilometre": 60000,
+        "satici": "Sahibinden",
+        "renk": "Mavi",
+        "model_yili": 2019,
+        "yakit": "Benzin",
+        "resim": "/images/ford-focus.jpg"
+      }
+    ]
+  },
+  {
+    "marka": "Mazda",
+    "model": [
+      {
+        "id": 19,
+        "ad": "Mazda 3",
+        "fiyat": 1450000,
+        "sehir": "Bursa",
+        "kilometre": 50000,
+        "satici": "Galeriden",
+        "renk": "Gümüş",
+        "model_yili": 2021,
+        "yakit": "Benzin",
+        "resim": "/images/mazda-3.jpg"
+      },
+      {
+        "id": 20,
+        "ad": "Mazda CX-5",
+        "fiyat": 1250000,
+        "sehir": "İstanbul",
+        "kilometre": 80000,
+        "satici": "Sahibinden",
+        "renk": "Beyaz",
+        "model_yili": 2018,
+        "yakit": "Dizel",
+        "resim": "/images/mazda-cx5.jpg"
+      }
+    ]
+  }
+]
