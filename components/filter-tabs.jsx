@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button";
 import { Slider } from "@/components/ui/slider";
 import { useState } from "react";
 import AdsCard from "./ads-card";
+import CarCard from "./car-card";
 
 export default function FilterTabs() {
   const [priceRange, setPriceRange] = useState([100, 1000000]);
@@ -164,11 +165,8 @@ export default function FilterTabs() {
           </div>
         </TabsContent>
       </Tabs>
-      {selectedTab === "emlak" && (
-        <div>
-          <AdsCard />
-        </div>
-      )}
+      {selectedTab === "emlak" && <AdsCard />}
+      {selectedTab === "arac" && <CarCard />}
     </div>
   );
 }
